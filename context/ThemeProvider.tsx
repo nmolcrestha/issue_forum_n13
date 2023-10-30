@@ -13,7 +13,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [mode, setMode] = useState("");
 
   const handleThemeChange = () => {
-    if (mode === "dark") {
+    if (mode === "light") {
       setMode("light");
       document.documentElement.classList.add("light");
     } else {
