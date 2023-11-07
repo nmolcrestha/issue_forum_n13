@@ -23,7 +23,7 @@ const NavContent = () => {
           (pathname.includes(item.route) && item.route.length > 1) ||
           pathname === item.route;
         return (
-          <SheetClose asChild key={item.route}>
+          <div key={item.route}>
             <Link
               href={item.route}
               className={`${
@@ -43,7 +43,7 @@ const NavContent = () => {
                 {item.label}
               </p>
             </Link>
-          </SheetClose>
+          </div>
         );
       })}
     </section>
