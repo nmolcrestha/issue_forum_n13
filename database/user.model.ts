@@ -1,5 +1,4 @@
 import { Schema, models, model, Document } from "mongoose";
-import { number } from "zod";
 
 export interface IUser extends Document {
   clerkId: string;
@@ -26,7 +25,7 @@ const UserSchema = new Schema({
   picture: { type: String, required: true },
   location: { type: String },
   potfolioWebsite: { type: String },
-  reputation: { type: number, default: 0 },
+  reputation: { type: Number, default: 0 },
   saved: [{ type: Schema.Types.ObjectId, ref: "Question" }],
   joinedAt: { type: Date, default: Date.now },
 });
