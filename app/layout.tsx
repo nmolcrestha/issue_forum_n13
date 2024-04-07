@@ -19,7 +19,7 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-spaceGrotesk",
 });
 
-export const metadat: Metadata = {
+export const metadata: Metadata = {
   title: "DevFlow",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto facilis ex consectetur necessitatibus distinctio dolor et expedita sunt porro incidunt suscipit, eius aspernatur accusantium illo ducimus! Dicta, exercitationem eaque?",
